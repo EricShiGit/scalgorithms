@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testtest (1)" project="S99" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="lastelementoflist.testtest" time="0.011">
+    <testcase name="string take" classname="lastelementoflist.testtest" time="0.006"/>
+    <testcase name="adding ints" classname="lastelementoflist.testtest" time="0.002"/>
+    <testcase name="Testing last element for list -&gt; integers" classname="lastelementoflist.testtest" time="0.001"/>
+    <testcase name="Testing last element for list -&gt; strings" classname="lastelementoflist.testtest" time="0.001"/>
+    <testcase name="Testing empty list -&gt; Exception" classname="lastelementoflist.testtest" time="0.001"/>
+  </testsuite>
+</testrun>

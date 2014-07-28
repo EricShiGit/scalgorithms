@@ -1,0 +1,5 @@
+package nestedflaten
+
+object flatten {
+
+}

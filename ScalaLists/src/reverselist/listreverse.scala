@@ -1,0 +1,60 @@
+package reverselist
+
+object listreverse {
+
+	//Built-in
+	def reverseList[A](lst: List[A]): List[A] = lst.reverse
+	
+	//Functional
+	/***
+	 * Fold method for a List takes two arguments
+	 * 1. The start value -> List[A]
+	 * 2. A function 
+	 * The function takes two args
+	 * 1. Accumulated value
+	 * 2. Current value
+	 */
+	def reverseFunc[A](lst: List[A]): List[A] =
+	  lst.foldLeft(List[A]()) { //inital empty List
+	  (r,h) => { 
+	    System.out.println(h)
+	    System.out.println(r)
+	    h :: r }
+	  }
+	
+	//Simple recursion method
+	def simpleRecur[A](lst: List[A]): List[A] = 
+	  lst match {
+		  case Nil	=> Nil
+		  case h :: tail => {
+		    System.out.println("Printing h:: tail :" + h :: tail)
+		    System.out.println("Printing tail: " + tail)
+		    System.out.println("Printing List(h) : " + List(h))
+		    simpleRecur(tail) ::: List(h)
+		  }
+		}
+
+	//Tail recursive
+	def tailRecur[A](lst: List[A]) : List[A] = {
+	  def reverse(result: List[A], currList: List[A]) : List[A] =
+	    currList match {
+	    case Nil	=> result
+	      case h :: tail => {
+	      System.out.println("Printing Head: " + h)
+	      System.out.println("Printing Tail : " + h :: tail)
+	      System.out.println("Printing Result : " + h :: result)
+	      System.out.println("Printing tail varaible : " + tail)
+	      reverse(h :: result, tail)
+	    }
+	  }
+	  reverse(Nil, lst)
+	}
+	
+	def main(args: Array[String]): Unit = {
+	   var reverseMe = List("A","B","C")
+	   //System.out.println(simpleRecur(reverseMe))
+	   //System.out.println(reverseList(reverseMe))
+	   //System.out.println(simpleRecur(reverseMe))
+	   System.out.println(reverseFunc(reverseMe))
+	}
+}

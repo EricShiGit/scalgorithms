@@ -1,0 +1,7 @@
+package listpalindrome
+
+object palindrome {
+
+  def main(args: Array[String]): Unit = {}
+
+}

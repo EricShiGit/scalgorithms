@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="testtest" project="S99" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="source.testtest" time="0.001">
+    <testcase name="string take" classname="source.testtest" time="0.0"/>
+    <testcase name="adding ints" classname="source.testtest" time="0.0"/>
+    <testcase name="Testing last element for list -&gt; integers" classname="source.testtest" time="0.0"/>
+    <testcase name="Testing last element for list -&gt; strings" classname="source.testtest" time="0.0"/>
+  </testsuite>
+</testrun>

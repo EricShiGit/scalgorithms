@@ -1,0 +1,13 @@
+package listpalindrome
+
+object palindrome {
+
+  def main(args: Array[String]): Unit = {
+    var ispalin = List("aexea")
+  }
+  
+  //reverse method
+  def isPalindrome[A](lst: List[A]): Boolean = lst == lst.reverse 
+  
+  def isPalindromeConverge
+}

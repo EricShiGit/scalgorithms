@@ -1,0 +1,7 @@
+package source
+
+object lastelemoflist {
+
+  def main(args: Array[String]): Unit = {}
+
+}

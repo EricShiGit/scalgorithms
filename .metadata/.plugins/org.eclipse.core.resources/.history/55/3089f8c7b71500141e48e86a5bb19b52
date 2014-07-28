@@ -1,0 +1,19 @@
+package source;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class lastelemoflistTest {
+
+	@Test
+	public void testMain()
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testLastElement() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,23 @@
+package reverselist
+
+object listreverse {
+ 
+	//Built-in
+	def reverseList[A](lst: List[A]): List[A] = lst.reverse
+	
+	//Simple recursion method
+	def simpleRecur[A](lst: List[A]): List[A] = {
+	  def reverse(result: List[A], currList: List[A]): List[A] = 
+	    currList match {
+	    case Nil 	   => result
+	    case h :: tail => reverse(h :: result, tail)
+	  }
+	  reverse(Nil, lst)
+	}
+	
+	def main(args: Array[String]): Unit = {
+	   var reverseMe = List("ABC")
+	   System.out.println(simpleRecur(reverseMe))
+	   System.out.println(reverseList(reverseMe))
+	}
+}

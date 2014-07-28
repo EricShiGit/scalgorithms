@@ -1,0 +1,8 @@
+package nestedflatten
+
+object flatten {
+	def flat(lst: List[A]): List[A] = lst flatMap {
+	  case ms: List[_] => flaten(ms)
+	  case e => List(e)
+	}
+}

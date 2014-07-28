@@ -1,0 +1,18 @@
+package source
+/**
+ * *
+ * Find the last element of a list.
+ * -> List[A], list must handle any types
+ */
+object lastelemoflist {
+  def lastElement[A](ls: List[A]): A = ls match {
+    case head :: Nil => head
+    case _ :: tail => lastElement(tail)
+    case _ 		  => throw new NoSuchElementException
+  }
+
+  def main(args: Array[String]): Unit = {
+    lastElement(List(1,2,3))
+  }
+
+}

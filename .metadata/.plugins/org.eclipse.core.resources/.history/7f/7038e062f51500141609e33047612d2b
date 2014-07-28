@@ -1,0 +1,9 @@
+package sizeof
+
+object sizeof {
+	def trival[A](lst: List[A]): Int = lst.size
+	
+	def main(args: Array[String]): Unit = {
+	  
+	}
+}

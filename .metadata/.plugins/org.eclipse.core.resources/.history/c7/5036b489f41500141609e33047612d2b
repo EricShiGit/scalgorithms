@@ -1,0 +1,11 @@
+package findelement
+
+object findelement {
+  //index number
+  def findElement[A](n: Int,lst: List[A]): A =
+    if (n >= 0) lst(n)
+    else throw new NoSuchElementException 
+    
+  def main(args: Array[String]): Unit = {}
+
+}

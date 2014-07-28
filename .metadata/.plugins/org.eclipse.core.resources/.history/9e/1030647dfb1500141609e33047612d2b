@@ -1,0 +1,23 @@
+package truthtable
+
+object gates {
+
+  def main(args: Array[String]): Unit = {}
+  
+  def and(a: Boolean, b: Boolean): Boolean = (a,b) match {
+    case (true, true) => true
+    case _ 			  => false
+  }
+  
+  def or(a: Boolean, b: Boolean): Boolean = (a,b) match {
+    case (true, _) => true
+    case (_, true) => true
+    case _ 		   => false
+  }
+  
+  def not(a: Boolean): Boolean = a match {
+    case true  => false
+    case false => true
+  }
+  
+}

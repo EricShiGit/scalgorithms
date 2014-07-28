@@ -1,0 +1,5 @@
+object gates {
+
+  def main(args: Array[String]): Unit = {}
+
+}

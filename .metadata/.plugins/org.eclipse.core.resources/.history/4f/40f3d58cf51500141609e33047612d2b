@@ -1,0 +1,17 @@
+package sizeof
+
+object sizeof {
+
+	def trival[A](lst: List[A]): Int = lst.size
+	
+	def recursiveSimple[A](lst: List[A]): Int = lst match {
+	  case Nil => 0
+	  case _ :: tail => 1 + recursiveSimple(tail)
+	}
+	
+	def main(args: Array[String]): Unit = {
+	  val list = List(1,2,3,4,5,6)
+	  val size = trival(list)
+	  System.out.println(size)
+	}
+}

@@ -1,0 +1,9 @@
+package listpalindrome
+
+object palindrome {
+
+  def main(args: Array[String]): Unit = {}
+  
+  def isPalindrome[A](lst: List[A]): Boolean = lst == lst.reverse 
+  
+}

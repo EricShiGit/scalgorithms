@@ -1,0 +1,10 @@
+package source
+/***
+ * Find the last element of a list.
+ * Example:
+ */
+object lastelemoflist {
+
+  def main(args: Array[String]): Unit = {}
+
+}

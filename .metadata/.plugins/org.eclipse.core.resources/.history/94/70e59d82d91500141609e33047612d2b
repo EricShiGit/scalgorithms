@@ -1,0 +1,6 @@
+package reverselist
+
+object listreverse {
+	def reverseList[A](lst: List[A]): List[A] = lst.reverse
+	
+}
